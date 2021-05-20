@@ -4,8 +4,9 @@
 * Sahibjeet Kaur
 * Navdeep Singh
 
-## J2EE Project
-## Sponsor: Pure Lush Designs and Co.
+## J2EE Web Application Project.
+## Capstone Project for Humber College
+## Sponsored by Pure Lush Designs and Co.
 
 
 ## Watch Video Demo and Presentation through this link:
