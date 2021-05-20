@@ -1,0 +1,102 @@
+.scanTable.hidden {
+    display:none;
+}
+
+div.scanTable .btnSave {
+    float:right;
+    display:block;
+}
+
+.scanTable {
+    /* Default background is return */
+    background-color: rgb(219, 255, 219);
+    padding:1em;
+    margin:.5em 1em;
+    border-radius: 1em;
+    box-shadow:  2px 2px rgb(189, 189, 189);
+}
+
+
+.scanTable td,.scanTable th  {
+   width:25%;
+}
+
+.scanTable input {
+    width:40%;
+}
+.scanTable .qtyBtn {
+    width:25%;
+    max-width: 5em;
+}
+
+#loadItems{
+    background-color: rgb(255, 242, 219);
+}
+
+
+.scanTable table {
+    width: 100%;
+}
+.scanTable td {
+    text-align: center;
+}
+
+#actionSwitch {
+    display:inline-block;
+}
+
+#actionSwitch .switch {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 1.7em;
+  }
+
+#actionSwitch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  #actionSwitch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(219, 255, 219);
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: -1px -1px #ccc ;
+  }
+  
+  #actionSwitch .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.10em;
+    width: 1.8em;
+    left: 2px;
+    bottom: 6px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 2px 2px #ccc ;
+  }
+  
+  #actionSwitch input:checked + .slider {
+    background-color: rgb(255, 242, 219);
+  }
+  
+
+  
+  #actionSwitch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  #actionSwitch {
+      float:right;
+  }

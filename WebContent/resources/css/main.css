@@ -1,0 +1,249 @@
+@charset "ISO-8859-1";
+body{
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+}
+#sidebar{
+	position:fixed;
+	width:0px;
+	height:100%;
+	background:#151719;
+	left:-200px;
+	transition:all 500ms linear;
+	margin-top:0px;
+}
+#sidebar.active{
+	left:0px;
+}
+#sidebar ul li{
+	color:rgba(230,230,230,0.9);
+	list-style: none;
+	padding:15px 0px;
+	border-bottom:1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+	position:absolute;
+	left:230px;
+	top:20px;
+}
+#sidebar .toggle-btn span{
+		display:block;
+		width:30px;
+		height:5px;
+		background:#151719;
+		margin:5px 0px;
+}
+#Header{
+	margin-left:100px;
+	margin: 1em 0 0.5em 0;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #151719;
+	font-style: italic;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	line-height: 54px;
+	text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+	
+}
+
+#imageInventory{
+	width:800px;
+	height:600px;
+	margin-left:200px;
+	
+}
+a:link {
+  text-decoration: none;
+ 
+}
+
+a {
+  color: rgba(230,230,230,0.9);
+}
+#form{
+	border:1px;
+	border-color:black;
+	border-style:solid;
+	margin-left:300px;
+	background-color:LightGray;
+}
+#category{
+	padding-left:100px;
+}
+#addItem{
+	text-align: center;
+	font-size: large;
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#addItem:hover {
+  background-color: #008CBA;
+  color: white;
+}
+#Text{
+	padding-right:200px;
+}
+input{
+	margin-top:10px;
+}
+select{
+	margin-top:10px;
+}
+textarea{
+	margin-top:10px;
+}
+.alert {
+  padding: 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  margin-bottom: 15px;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#items{
+	font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  
+}
+#items td, #items th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#items tr:nth-child(even){background-color: #f2f2f2;}
+#items tr:hover {background-color: #ddd;}
+#items th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+#itemList{
+	margin-left:250px;
+	
+}
+#ListOfItems{
+	text-align: center;
+	margin: 1em 0 0.5em 0;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #151719;
+	font-style: italic;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 50px;
+	line-height: 54px;
+	text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+#delete{
+	background-color: red;
+	font-size: 20px;
+}
+#update{
+	background-color: #4CAF50;
+	font-weight: 10px;
+	font-size: 20px;
+}
+#link{
+	color:red;
+}
+.container{
+	
+}
+* {
+  box-sizing: border-box;
+}
+
+/* form.search input[type=text] {
+  
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 20%;
+  background: #f1f1f1;
+
+} */
+
+/* form.search button {
+  float: right;
+ width: 40px;
+ 
+  background: #2196F3;
+  color: white;
+  font-size: 20px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+ */
+form.search button:hover {
+  background: #0b7dda;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#searchAdd{
+	justify-content:flex;
+}
+#span{
+	display: table-cell;
+            padding: 0 4px 0 6px;
+}
+#float{
+	float:right;
+}
+#Back{
+	text-align: center;
+	font-size: large;
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
+  #Back:hover{
+   background-color: #008CBA;
+  color: white;
+  }
+.SucCtlMsg{
+	color:green;
+	font-weight: bold;
+}
+#text{
+	color:black;
+}

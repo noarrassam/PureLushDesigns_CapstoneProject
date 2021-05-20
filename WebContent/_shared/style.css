@@ -1,0 +1,443 @@
+
+@charset "UTF-8";
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --dark-color: #2e3436;
+  --light-color: rgb(225, 224, 224);
+  --success-back: #9bd68c;
+  --success-font: green;
+  --warning-back: #ffcaca;
+  --warning-font: red;
+  
+}
+
+/* Controller Message */
+div.CtlMsg {
+	float: right;
+	z-index: -1;
+	padding: 1em;
+	border-radius: 1em;
+	
+}	
+
+div.success {
+	background-color: var(--success-back);
+	color: var( --success-font);
+	border: 1px var( --success-font) solid;
+	
+}	
+
+div.fail {
+	background-color: var(--warning-back);
+	color: var(--warning-font);
+	border: 1px var(--warning-font) solid;
+	
+}	
+
+/* Events Details */
+.scanTable.hidden {
+    display:none;
+}
+
+div.scanTable .btnSave {
+    float:right;
+    display:block;
+}
+
+.scanTable {
+    /* Default background is return */
+    background-color: rgb(219, 255, 219);
+    padding:1em;
+    margin:.5em 1em;
+    border-radius: 1em;
+    box-shadow:  2px 2px rgb(189, 189, 189);
+}
+
+
+.scanTable td,.scanTable th  {
+   width:25%;
+}
+
+.scanTable input {
+    width:40%;
+}
+.scanTable .qtyBtn {
+    width:25%;
+    max-width: 5em;
+}
+
+#loadItems{
+    background-color: rgb(255, 242, 219);
+}
+
+
+.scanTable table {
+    width: 100%;
+}
+.scanTable td {
+    text-align: center;
+}
+
+#actionSwitch {
+    display:inline-block;
+}
+
+#actionSwitch .switch {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 1.7em;
+  }
+
+#actionSwitch .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  #actionSwitch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(219, 255, 219);
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: -1px -1px #ccc ;
+  }
+  
+  #actionSwitch .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.10em;
+    width: 1.8em;
+    left: 2px;
+    bottom: 6px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 2px 2px #ccc ;
+  }
+  
+  #actionSwitch input:checked + .slider {
+    background-color: rgb(255, 242, 219);
+  }
+  
+
+  
+  #actionSwitch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  #actionSwitch {
+      float:right;
+  }
+
+
+/* Suppliers Form */
+.rmdT .formElement {
+	margin: 1em;
+}
+
+.err {
+	color: var(--warning-font);
+}
+
+.rmdT .formElement textarea {
+	width: 100%;
+	display: block;
+}
+
+
+
+form.searchBox, form.toolBox {
+	display:flex;
+	justify-content: space-between;
+	background-color: var(--dark-color);
+	padding: 0.2em 1em;
+	flex-wrap:wrap;
+	white-space:nowrap;
+	flex-direction: row-reverse;
+}
+
+
+main.rmdT {
+	margin-left:2em;	
+}
+
+
+table.rmdT  {
+    margin: 1em auto;
+    border-collapse: collapse;
+    border: black solid 2px;
+    overflow-x:auto;
+    background-color:   var(--white);
+    width: 80%;
+}
+
+.rmdT tr:hover {
+	background-color: var(--light-color);
+}
+
+.rmdT td a {
+    display:inline-block;
+    text-decoration:none;
+    color: var(--dark-color);
+   	
+}
+
+.rmdT td>*, .rmdT th * {
+	padding: 1em;
+	width:80%; 
+}
+
+.rmdT td.actionCell div{
+	width:100%;
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.rmdT .tablebtn {
+	background-color: var(--light-color);
+	border: 1px solid var(--dark-color);
+	padding: 0.5em;
+	overflow: hidden;
+}
+
+.rmdT .tablebtn:hover {
+	background-color: var(--white);
+	border: 1px solid var(--dark-color);
+	padding: 0.5em;
+	
+}
+
+.rmdT th, .rmdT td {
+    border: black solid 2px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.rmdT th {    
+    background-color: var(--dark-color);
+    color: var(--white);
+}
+
+*\Navdeep*/
+.navNavBar{
+	height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: -10px; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidebar{
+	margin: 0;
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  top:-20px;
+  height: 100%;
+  
+  background: #1e1e1e;
+  transition: all .5s ease;
+}
+header{
+  font-size: 28px;
+  color: white;
+  padding: 35px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar #Side_uname {
+  line-height: 30px;
+  margin: 10px;
+  display: block;
+  font-size: 15px;
+}
+.sidebar a, .insideButton a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+
+.sidebar span#claimNum {
+	color:black;
+	padding:.5em;
+	background-color: #FFF476;
+	float:right;
+	line-height:1em;
+	margin:1em;
+	
+}
+
+.sidebar a.active, .sidebar a:hover,  a.active.insideButton, a:hover.insideButton{
+  border-left: 5px solid #88aacc;
+  color: #88aacc;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+
+.insideButton {
+  display:inline-block;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 2em 1.5em;
+  font-size: 1.7m;
+  color:white;
+  font-weight: bold;
+  background: #262626;
+  text-align: center;
+  padding: 1em  2em;
+  transition: all .5s ease;
+}
+
+label #btn,label #cancel{
+	
+  position: fixed;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.navHeader {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.navHeader a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.navHeader a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navHeader a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navHeader a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .navHeader a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  .sidebar header,#btn,#cancel{
+    display: none;
+  }
+  .sidebar span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
