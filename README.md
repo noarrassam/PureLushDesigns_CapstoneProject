@@ -4,8 +4,8 @@
 * Sahibjeet Kaur
 * Navdeep Singh
 
-## J2EE Web Application Project.
-## Capstone Project for Humber College
+## Full Stack J2EE Web Application Project with MySql.
+## Capstone Project for Humber College.
 ## Sponsored by Pure Lush Designs and Co.
 
 
