@@ -5,7 +5,7 @@
 * Navdeep Singh
 
 ## J2EE Project
-## Sponsor: Pure Lush Designs.
+## Sponsor: Pure Lush Designs and Co.
 
 
 ## Watch Video Demo and Presentation through this link:
